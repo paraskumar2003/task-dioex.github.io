@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-container .login-component{
+    min-height: 80vh;
+    max-width: 450px;
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px #000;
+    overflow: hidden;
+}
+.login-component img{
+    width: 100%;
+}
+.login-form-container .login-success-img{
+    width: 60%;
+}
+.login-component .login-form-container{
+    padding:1.5rem;
+}
+.login-component .place-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-component .login-form-container h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.login-form-container .phone-no-input > *{
+    width: 100%;
+}
+.phone-no-input .phone-no{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.phone-no-input input{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #666;
+    margin-bottom: 20px;
+    padding: 5px 12px;
+}
+.phone-no-input button{
+    border-radius: 10px;
+    padding: 5px 12px;
+    outline: none;
+    border: none;
+    background: #2974f1;
+    color: white;
+    font-weight: 500;
+}
+.login-form-container p{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+}
+.highlight{
+    color: #2974f1;
+}
+.login-form-container .fs-18{
+    font-size: 18px !important;
+}
+.login-form-container .mb-20{
+    margin-bottom:20px;
+}
+.login-success-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.alert{
+    padding: 0;
+    color: rgb(157, 2, 2);
+    font-size: 14px;
+}
+.login-form-container .resend-otp{
+    background: #ddd;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #666;
+}
+.login-form-container button:hover{
+    box-shadow: 0px 0px 10px -5px #000;
+}
+.login-form-container h6{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    margin-top: 20px;
+}
+@media(max-width:450px){
+    .login-component{
+        border-radius: 0px !important;
+    }
+}

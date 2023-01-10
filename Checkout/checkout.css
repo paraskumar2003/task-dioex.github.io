@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s all ease;
+}
+* > *{
+    transition: 0.2s all ease;
+}
+body{
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+}
+* > a{
+    text-decoration: none !important;
+}
+*>p{
+    font-size: 16px !important;
+}
+* > button{
+    color: #fff;
+    background-color: #2974f1;
+}
+label{
+    width: 100%;
+    overflow: hidden;
+}
+.bold{
+    font-weight: 600;
+}
+.medium{
+    font-weight: 500;
+}
+.checkout-map{
+    width: 100%;
+    padding: 1rem;
+}
+.fa-plus{
+    color: #ddd;
+}
+.step-container .step-headline{
+    font-weight:600;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.step-container .step-headline.active{
+    color: #2974f1;
+} 
+.step-one .step-head{
+    display: flex;
+    justify-content: space-between;
+}
+.step-one-form{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.step-container .step .step-one-form .form-head{
+    margin:8px;
+    padding:8px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.step .step-one-form .form-head a{
+    text-decoration: none;
+}
+.step .step-one-form .form-head{
+    border-bottom: 2px solid #ddd;
+}
+.step .step-one-form .form-body{
+    margin:8px;
+}
+.step .step-one-form .form-body .addresses{
+    width: 100%;
+}
+.step .step-one-form .form-body .addresses .saved-address{
+    display:flex;
+    background:#eef0fc;
+    border:1px solid #b4c8fb;
+    border-radius:5px;
+    padding:4px;
+}
+.saved-address a{
+    text-decoration: none;
+}
+.step .step-one-form .form-body .addresses .saved-address input{
+    margin:5px 10px 5px 5px;
+}
+.step-one-form .form-body .addresses .add-new-address{
+    margin-left: 20px;
+    padding: 10px;
+}
+.add-new-address i{
+    margin-right:5px;
+    color: #ddd
+}
+.new-address-link a{
+    text-decoration: none;
+}
+.step-one-form .form-body .locations label img{
+    margin-right: 10px;
+}
+.step-one-form .form-body .locations label{
+    font-weight:600;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding-bottom: 8px;
+}
+.step-one-form .form-body .locations .find-pickup{
+    margin-left: 20px;
+    padding: 10px;
+}
+.step-one-form .form-body .locations .find-pickup i{
+    color: #ddd;
+    margin-right:5px;
+}
+.step-one-form .form-body .locations .find-pickup a{
+    text-decoration: none;
+}
+.step-one-form .form-footer{
+    background: #f0f2f2;
+    padding: 12px 18px 11px;
+    border: 1px solid #ddd;
+}
+.step-one-form .form-footer button{
+    border-radius: 10px;
+    background: #2974f1;
+    border:2px #2974f1 solid;
+    color: #fff;
+    padding:3px 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.step-container{
+    margin-top: 10px;
+}
+.step-container .step-two .step-headline .close-btn{
+    font-size: 16px;
+    text-decoration: none;
+}
+.step-two-form{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.step-two-form .input-section{
+    padding:14px 18px;
+}
+.step-two-form .input-section p{
+    font-size: 20px;
+}
+.step-two-form .code-input{
+    margin-left: 20px;
+}
+.step-two-form .code-input i{
+    margin-right: 5px;
+}
+.step-two-form .code-input input{
+    border-radius:3px;
+    padding: 3px 12px;
+    border: 1px solid #666;
+    outline: none;
+    font-size: 14px;
+}
+.step-two-form .code-input input::placeholder{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.step-two-form .code-input button{
+    border:1px solid #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 12px 5px;
+    border-radius:10px;
+}
+.step-two-form .input-section{
+    margin-bottom: 10px;
+}
+.step-two-form .input-section p.heading{
+    border-bottom:1px solid #ddd;
+}
+.step-two-form .input-section .payment-methods{
+    padding-left: 10px;
+}
+.input-section .payment-methods .method-container{
+    display: flex;
+    align-items: start;
+    margin-bottom:5px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    transition: 0s;
+}
+.input-section .payment-methods .method-container input{
+    margin-right: 5px;
+}
+.method-container .cards-container img{
+    max-width: 500px;
+    object-fit: cover;
+}
+.method-container select{
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #f0f2f2;
+    padding:3px 12px 3px;
+    font-size: 14px;
+}
+.upi-id-input label{
+    margin-bottom: 5px;
+}
+.upi-id-input input{
+    padding: 3px 12px;
+    font-size: 14px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.upi-id-input button{
+    border: 1px solid #2974f1;
+    border-radius: 10px;
+    background: #2974f1;
+    font-size: 14px;
+    padding: 3px 12px;
+}
+.step-three .step-three-form{
+    border: 1px solid #ddd;
+    border-radius:10px;
+    padding: 14px 18px;
+}
+.step-three-form .form-head{
+    margin-bottom: 10px;
+}
+.step-three-form .form-head .delivery-date{
+    font-weight: 600;
+}
+.step-three-form .delivery-date .date{
+    color: #2974f1;
+} 
+.step-three-form .form-body p{
+    margin-bottom:0px;
+}
+.step-three-form .form-head p{
+    font-size:10px;
+    margin-bottom: 0;
+    color: #666;
+}
+.step-three-form .form-body .product-img{
+    width: 100%;
+    object-fit: cover;
+}
+.step-three-form .form-body .product-name{
+    font-weight:600;
+}
+.step-three-form .form-body .net-amount{
+    color: #2974f1;
+    font-weight: 600;
+}
+.step-three-form .form-body select{
+    outline: none;
+    background:#f0f2f2;
+    border-radius:10px;
+    text-align: center;
+    width:60px;
+    margin:5px 0;
+}
+.sold-by{
+    font-size: 14px;
+    color: #666;
+}
+.form-body .delivery-day {
+    color: green;
+}
+.step-three .place-order{
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+}
+.step-three .place-order button{
+    outline: none;
+    border:1px solid #2974f1;
+    background: #2974f1;
+    padding: 3px 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px -10px #000;
+    color: #fff;
+    margin-right: 10px;
+}
+.order-total{
+    font-weight: 700;
+    font-size: 20px;
+    color: #2974f1;
+}
+.bill-container{
+    padding: 1rem;
+}
+.bill{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius:10px;
+}
+.bill .billing-section{
+    margin: 14px 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ddd;
+}
+.billing-section .underline{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+.bill .billing-values{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+}
+.billing-section .order-total{
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+} 
+.billing-section .savings p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #2974f1;
+    margin-bottom: 0;
+}
+.billing-section .savings ul{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.bill-foot{
+    background-color: #f0f2f2;
+    padding: 14px 18px;
+    border-top: 1px solid #ddd;
+}
+.bill-foot a{
+    font-size: 12px;
+}
+.step-two-form .form-foot{
+    background: #f0f2f2;
+    width: 100%;
+    padding: 14px 18px;
+    border-top:1px solid #ddd;
+}
+.step-two-form .form-foot button{
+    background: #2974f1;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding:3px 12px;
+}
+button,.close-btn{
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+input[type="radio"]:checked + .form-footer {
+    background: #b4c8fb;
+}
+
+@media(max-width:450px){
+    *>button{
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+    .place-order{
+        flex-direction: column-reverse;
+    }
+    .place-order > *{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

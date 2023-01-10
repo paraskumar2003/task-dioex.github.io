@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.contact-container{
+   width: 100%;
+}
+.contact-container .contact-info-container h1.contact-hero-text{
+   font-size: 32px;
+   text-align: center;
+   padding: 2rem 0;
+}
+.contact-container .contact-info-container .contact-options-container{
+    background-color: #f0f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.contact-container .contact-info-container .contact-options-container .contact-option{
+    padding:14px 18px;
+    margin: 2rem 0;
+    background-color: rgb(255, 255, 255);
+}
+.contact-info-container .contact-options-container .contact-option h4{
+    font-size: 20px;
+    color: #2974f1;
+}
+.contact-options-container .contact-option p{
+    font-size: 16px;
+}
+.contact-options-container button{
+    outline: none;
+    border: none;
+    padding: 5px 16px;
+    border-radius:5px;
+    background-color: #2974f1;
+    color: #fff;
+    font-weight: 500;
+}
+.contact-options-container button{
+    margin-top: auto;
+}
+.contact-option{
+    display: flex;
+    flex-direction: column;
+}
+.contact-option p{
+     color: #666;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    font-size: 32px;
+    color: #2974f1;
+    padding:0 1rem;
+}
+.map, .map iframe{
+    width: 100%;
+}
+@media(max-width:900px){
+    .contact-option{
+        text-align: center;
+    }
+    h1{
+        font-size: 28px !important;
+    }
+}
