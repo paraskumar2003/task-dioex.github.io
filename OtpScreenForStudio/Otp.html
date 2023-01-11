@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autofocus Field</title>
+	<link rel="stylesheet" type="text/css" href="otp.css">
+     <!-- font awesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+     <!-- Bootstrap cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            background-color: #3c3c3c;
+        }
+
+.container{
+	display: flex;
+	flex-flow: column;
+	align-items: space-around;
+	justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container h1{
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+.container h3{
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 300;
+    border-bottom: 1px solid #666;
+
+}
+
+.userInput{
+	display: flex;
+	justify-content: center;
+    padding: 1rem 0 2rem;
+}
+
+input{
+	margin: 10px;
+    width: 35px;
+	border:2px solid #ffc107;
+    outline: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: transparent;
+    color: #fff;
+
+
+}
+
+
+
+button{
+	width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    padding:12px;
+    border: none;
+    outline: none;
+    background-color: #ffc107;
+    text-transform: capitalize;
+
+}
+.countdown{
+    text-align: center;
+    color: white;
+    padding: 2rem 0 1rem;
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		
+        <h1>Verify OTP</h1>
+        <h3>We have sent you an One Time Password to your mobile or email</h3>
+        <p class="countdown">01:30</p>
+		<div class="userInput">
+			<input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+			<input type="text" id="fifth" maxlength="1" onkeyup="clickEvent(this,'sixth')">
+			<input type="text" id="sixth" maxlength="1">
+		</div>
+		<button>Confirm</button>
+	</div>
+    <script>
+        function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+		}
+
+
+        // Set the date we're counting down to
+
+var countDownDate = new Date().getTime() + (90 * 1000);
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down time
+  var distance = countDownDate - now;
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  if(minutes < 10 && seconds < 10){
+      document.querySelector(".countdown").innerHTML = `0${minutes} : 0${seconds}`;
+    }else if(minutes < 10){
+        document.querySelector(".countdown").innerHTML = `0${minutes} : ${seconds}`;
+    }else if(seconds < 10){
+        document.querySelector(".countdown").innerHTML = `${minutes} : 0${seconds}`;
+    }else{
+      document.querySelector(".countdown").innerHTML = `${minutes} : ${seconds}`;
+  }
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
+</body>
+</html>
