@@ -191,16 +191,32 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-        section.overview .feature-container > *{
+        section.overview .feature-container .feature > *{
             text-align: center;
             padding: 2rem 0 1rem;
         }
         .feature-container h1{
             color: black;
-            font-weight: 500;
+            font-weight: 700;
         }
         .feature-container h4{
             color: black;
+        }
+        section.specs{
+            width: 100%;
+            background-color: #000;
+            padding:2rem 1rem;
+        }
+        @media(min-width:768px){
+
+            section.specs > * {
+                color: white;
+                margin:1rem 3rem;
+            }
+        }
+        section.specs .spec-topic{
+            border-bottom: 3px solid #fff;
+            margin-bottom: 40px;
         }
 
 
@@ -305,17 +321,59 @@
                 </div>    
             </div>
             <div class="feature-container">
-                <h1>CLARITY REDEFINED</h1>
-                <h4>See your day unfold on the bigger, brighter, clearer display that delivers a seamless viewing experience.</h4>
-                <img style="height: 1200px;" class="w-100" src="https://cdn.shopify.com/s/files/1/0997/6284/files/5_2_ee186bb5-eb67-4849-be81-aba850e105f0_1900x.png?v=1671778167" alt="">
-                <h1 class="bold">60 Hz refresh rate</h1>
-                <video class="w-100" autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/828854ce6b724d338b5e7ecf079682a3.mp4"></video>
+                <div class="feature feature-1">
+                    <h1>CLARITY REDEFINED</h1>
+                    <h4>See your day unfold on the bigger, brighter, clearer display that delivers a seamless viewing experience.</h4>
+                    <img style="height: 1200px;" class="w-100" src="https://cdn.shopify.com/s/files/1/0997/6284/files/5_2_ee186bb5-eb67-4849-be81-aba850e105f0_1900x.png?v=1671778167" alt="">
+                </div>
+
+                <div class="feature feature-2">
+                    
+                    
+                    <h1 class="bold">60 Hz refresh rate</h1>
+                    <video class="w-100" autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/828854ce6b724d338b5e7ecf079682a3.mp4"></video>
+                </div>
+                <div class="feature feature-3">
+
+                    <h1>VIEWING EXPERIENCE REDEFINED</h1>
+                    <h4>The Always on Display ensures that you can see your
+                        life whenever and wherever you need.</h4>
+                        <img class="w-100" src="https://cdn.shopify.com/s/files/1/0997/6284/files/15_1_612d9fe8-4330-4250-8ed1-f697ee58e994_1900x.png?v=1671778999" alt="">    
+                </div>
+
+                <div class="feature feature-4">
+                    <h1>NAVIGATION REDEFINED</h1>
+                    <h4>Find your way through a range of features with a
+                        fully functional crown that does as directed.</h4>
+                    <h1>Digital crown</h1>  
+                    <video class="w-100" autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/793bec429f634b4a9d320360085d63dc.mp4"></video>  
+                </div>
             </div>
                 </section>
-        <!-- <section class="col-xl-12" id="specs">
-            <img src="https://cdn.shopify.com/s/files/1/0997/6284/files/Artboard_2_1-min_1900x.png?v=1672203442" alt="">
+         <section class="col-xl-12 specs" id="specs">
+            
+            <h1 class="head">Specifications</h1>
+
+            <div class="spec-topic">
+                <h2 class="spec-type">CONNECTIVITY</h2>
+                <p class="spec-value">System Requirement: iOS 10 & + or Android 9 & +</p>
+                <p class="spec-value">BT : v5.3</p>
+            </div>
+            <div class="spec-topic">
+                <h2 class="spec-type">DISPLAY</h2>
+                <p class="spec-value">Display technology : AMOLED</p>
+                <p class="spec-value">Size : 1.78”</p>
+                <p class="spec-value">Resolution : 368*448px</p>
+                <p class="spec-value">Cloud-based watch faces : Yes</p>
+            </div>
+            <div class="spec-topic">
+                <h2 class="spec-type">SENSORS</h2>
+                <p class="spec-value">Heart rate sensor : Yes</p>
+                <p class="spec-value">Accelerometer : Yes</p>
+                <p class="spec-value">SpO2 sensor : Yes</p>
+            </div>
         </section>
-        <section class="col-xl-12" id="review">
+       <!-- <section class="col-xl-12" id="review">
             <img src="https://cdn.shopify.com/s/files/1/0997/6284/files/Artboard_2_1-min_1900x.png?v=1672203442" alt="">
         </section>
         <section class="col-xl-12" id="faq">
